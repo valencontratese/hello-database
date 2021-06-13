@@ -3,6 +3,13 @@
 // ahora tambien importamos mongoose
 const express  = require('express');
 const mongoose = require('mongoose');
+// agregamos esta linea
+const cors     = require('cors');
+
+const app = express();
+
+// y esta otra
+app.use(cors());
 
 // importamos el router que creamos para la api
 const router = require('./routes/api/user');
